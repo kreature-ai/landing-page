@@ -1,2 +1,2 @@
 # landing-page
-landing page project from TOP
+This is the landing page project from The Odin Project. This may be updated on a later date to add more functionality (JS, more styling, etc.).
