@@ -1,8 +1,15 @@
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     font-family: Roboto, sans-serif;
 }
+
+img {
+    width: 100px;
+    height: 100px;
+  }
 
 .section1 {
     display: flex;
@@ -41,7 +48,12 @@ li {
     display: inline-block;
 }
 
-.top
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+}
 
 .hero {
     color: #e5e7eb;
@@ -53,27 +65,95 @@ li {
     color: #f9faf8;
 }
 
-.button1
+.subtext {
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+button {
+    background-color: #3882f6;
+    color: #eee;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 0;
+    border-radius: 6px;
+    border-style: solid;
+}
 
 .image {
-    background-color: #eee;
     display: flex;
-    height: ;
-    margin: ;
-    width: ;
-    
-
 }
 .image > h4 {
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    color: #e5e7eb;
+    background-color: rgb(124, 124, 124);
+    justify-content: center;
     text-align: center;
+    height: 280px;
+    margin: 5px;
+    width: 560px;
 }
 
 .content
 
-.main 
+.main {
+    display: flex;
+    flex-direction: row;
+}
 
-.info
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 36px;
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+}
+
+.plants {
+    /* flex plant container */
+    display: flex;
+    flex-direction: row;
+  
+    /* center items in container horizontally */
+    justify-content: center;
+  
+    /* align all items center */
+    align-items: center;
+  
+    /* add 52px between each item */
+    gap: 52px;
+  }
+  
+  #one,
+  #two,
+  #three,
+  #four {
+    /* align items center and set fixed width of 200px */
+    text-align: center;
+    flex-basis: 200px;
+  }
+  
+  .text {
+    /* centers and wraps text classes*/
+    text-align: center;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
 
 .quote
 
@@ -85,6 +165,6 @@ h4
 
 p > .call
 
-.button2
+
 
 .footer
