@@ -35,6 +35,7 @@ img {
 
 .links {
     color: #e5e7eb;
+    display: flex;
 }
 
 ul {
@@ -79,9 +80,9 @@ button {
     padding-bottom: 8px;
     padding-left: 16px;
     padding-right: 16px;
-    border: 0;
     border-radius: 6px;
     border-style: solid;
+    border-color: #eee;
 }
 
 .image {
@@ -99,11 +100,14 @@ button {
     width: 560px;
 }
 
-.content
-
-.main {
+.content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex: 1 0 auto;
+
+    /* Centers content */
+    justify-content: center;
+    align-items: center;
 }
 
 .info {
@@ -136,35 +140,96 @@ button {
   
     /* add 52px between each item */
     gap: 52px;
-  }
-  
-  #one,
-  #two,
-  #three,
-  #four {
+
+    padding-bottom: 36px;
+}
+
+#one,
+#two,
+#three,
+#four {
     /* align items center and set fixed width of 200px */
     text-align: center;
     flex-basis: 200px;
-  }
+}
   
-  .text {
+.text {
     /* centers and wraps text classes*/
     text-align: center;
     white-space: pre-wrap;
     word-wrap: break-word;
-  }
+}
 
 
-.quote
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    padding-left: 700px;
+    padding-right: 700px;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
 
-.main2
+.quote > p {
+    font-style: italic;
+    color: #1f2937;
+    font-size: 36px;
+    justify-content: center;
+    padding: 36px;
+}
+.quote > h4 {
+    text-align: end;
+}
 
-.call
 
-h4
+.action {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882f6;
+    margin: 36px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 120px;
+    padding-right: 120px;
+    border-radius: 6px;
+}
 
-p > .call
+.action > button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
 
+.call {
+   display: flex;
+   flex-direction: column;
+   color: #e5e7eb;s
+}
 
+.call > p {
+    margin: 0;
+}
 
-.footer
+.call > h4 {
+    font-size: 18px;
+}
+
+.footer {
+    /* fixes footer to bottom of page and keeps from shrinking when resized */
+
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    bottom: 0px;
+    background-color: #1f2937;
+    color: #eee;
+    justify-content: center;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    width: 100%;
+}
